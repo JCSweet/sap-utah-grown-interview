@@ -6,21 +6,21 @@ import Link from "next/link";
 const Main = () => {
   return (
     <>
-      <main className="pt-6 flex flex-col items-center justify-center w-3/4">
+      <main className="container mx-auto flex flex-col items-center justify-center pt-5 px-5 lg:px-0 max-w-screen-lg">
         {/* Tagline  */}
-        <section>
-          <h3>Utah&apos;s Cannabis Community</h3>
+        <section id="header">
+          <h3 className="font-normal">Utah&apos;s Cannabis Community</h3>
         </section>
         {/* -Tagline  */}
         {/* Event Cards  */}
         <section>
-          <h1>Upcoming Utah Medical Card Events</h1>
+          <h2>Upcoming Utah Medical Card Events</h2>
           <div>** event card components **</div>
         </section>
         {/* -Event Cards  */}
         {/* Things to know  */}
         <section>
-          <h2>Things to know before your appointment</h2>
+          <h3>Things to know before your appointment</h3>
           <div>** things to know checklist **</div>
         </section>
         {/* -Things to know  */}
@@ -28,35 +28,29 @@ const Main = () => {
         <section className="w-full">
           <Image
             src="/MockBannerAd@2x.png"
-            width={0}
-            height={0}
+            width={1181}
+            height={286}
             sizes="100vw"
-            alt="Leaf Nation. Keeping Utah Fresh."
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
+            alt="Leaf Nation. Now keeping Utah fresh."
           />
           <p className="text-right">Ad</p>
         </section>
         {/* -Leaf Nation Banner Ad  */}
         {/* Medical Cards Section  */}
-        <section className="flex flex-row gap-x-10">
-          <Image
-            src="/Consultation@2x.png"
-            width={0}
-            height={0}
-            sizes="100vw"
-            alt="Leaf Nation. Keeping Utah Fresh."
-            style={{
-              width: "52%",
-              height: "auto",
-            }}
-          />
-          <div>
-            <h1>Utah Medical Cards</h1>
+        <section className="flex flex-col lg:flex-row gap-x-10 justify-center items-start">
+          <div className="mb-10 lg:mb-0">
+            <Image
+              src="/Consultation@2x.png"
+              width={640}
+              height={553}
+              sizes="100vw"
+              alt="Image of a medical professional giving a consultation to a client."
+            />
+          </div>
+          <div className="w-full lg:w-7/12 pt:5">
+            <h2>Utah Medical Cards</h2>
             <p>
-              A medical cannabis card, also known as a medical mari- juana card,
+              A medical cannabis card, also known as a medical mari-juana card,
               is a state-issued identification card that allows qualified
               patients to legally purchase and use medical cannabis for the
               treatment of specific medical conditions. In Utah, a card is
@@ -75,7 +69,7 @@ const Main = () => {
             backgroundImage: `url(${reviewBG.src})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
-            //   width: "100%",
+            width: "100%",
             height: "181px",
           }}
         >
@@ -86,9 +80,9 @@ const Main = () => {
         </section>
         {/* -Review Banner */}
         {/* FAQs */}
-        <section>
-          <h1>FAQs...</h1>
-          <ul>
+        <section className="w-full">
+          <h2>FAQs...</h2>
+          <ul id="faqs">
             <li>
               <Link href="#">
                 If I don&apos;t qualify, do i still have to pay the QMP?
@@ -146,8 +140,8 @@ const Main = () => {
         </section>
         {/* -FAQs */}
         {/* Utah Medical Cannabis Pharmacies */}
-        <section>
-          <h1>Utah Medical Cannabis Pharmacies</h1>
+        <section className="w-full">
+          <h2>Utah Medical Cannabis Pharmacies</h2>
           <div>
             <ul>
               <li>** pharmacy contact components **</li>
@@ -155,37 +149,39 @@ const Main = () => {
           </div>
         </section>
         {/* -Utah Medical Cannabis Pharmacies */}
+        {/* About Us and Contact */}
+        <section className="flex flex-col lg:flex-row gap-x-10 justify-center items-center">
+          <div className="w-full lg:w-7/12">
+            <div className="mb-10">
+              <h2>About Utah Grown</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation ullam- corper suscipit lobortis nisl ut
+                aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                in hendrerit in vulputate velit esse molestie consequat, vel
+                illum dolore.
+              </p>
+            </div>
+            <div>
+              <h2>Utah Grown Office</h2>
+              <h4>730 State Street</h4>
+              <h4>Salt Lake City, Utah 84111</h4>
+            </div>
+          </div>
+          <div>
+            <Image
+              src="/NormalizeItUtah@2x.png"
+              width={663}
+              height={893}
+              sizes="100vw"
+              alt="Image a plant growing from two pots that is in the shape of the state of Utah with hashtag: #NormalizeIt"
+            />
+          </div>
+        </section>
+        {/* -About Us and Contact */}
       </main>
-      {/* Full-width sectional */}
-      <section className="w-full flex flex-row gap-x-10 items-center justify-center">
-        <div className="">
-          <div>
-            <h1>About</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-              cumque harum eos consectetur quod repudiandae autem itaque, atque
-              corporis fugiat necessitatibus iure sed non consequatur ratione
-              voluptas maxime dolorum expedita?
-            </p>
-          </div>
-          <div>
-            <h1>Utah Grown Office</h1>
-            <h2>730 State Street</h2>
-            <h2>Salt Lake City, Utah 84111</h2>
-          </div>
-        </div>
-        <Image
-            src="/NormalizeItUtah@2x.png"
-            width={0}
-            height={0}
-            sizes="100vw"
-            alt="Image a plant growing from two pots that is in the shape of the state of Utah with hashtag: #NormalizeIt"
-            style={{
-              width: "40%",
-              height: "auto",
-            }}
-          />
-      </section>
     </>
   );
 };
