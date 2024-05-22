@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
       <div style={{ backgroundColor: "#225A2D", height: "120px" }}>
         <div className="footerWhiteCopy container mx-auto max-w-screen-lg flex flex-col sm:flex-row items-start justify-center lg:justify-end gap-x-10 px-5 py-2">
-          <p>©2023 All Rights Reserved</p>
+          <p>&copy;2023 All Rights Reserved</p>
           <p>
             <Link href="#">Terms and Conditions</Link>
           </p>
