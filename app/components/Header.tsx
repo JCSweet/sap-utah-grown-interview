@@ -13,7 +13,7 @@ const Header = () => {
         height: "678px",
         maxHeight: "678px",
         backgroundSize: "cover",
-        borderBottom: "50px solid #103c00",
+        borderBottom: "50px solid #225A2D",
       }}
     >
       <NavBar />

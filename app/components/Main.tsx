@@ -38,7 +38,7 @@ const Main = () => {
         {/* -Leaf Nation Banner Ad  */}
         {/* Medical Cards Section  */}
         <section className="flex flex-col lg:flex-row gap-x-10 justify-center items-start">
-          <div className="mb-10 lg:mb-0">
+          <div className="mb-5 lg:mb-0">
             <Image
               src="/Consultation@2x.png"
               width={640}
@@ -170,12 +170,12 @@ const Main = () => {
               <h4>Salt Lake City, Utah 84111</h4>
             </div>
           </div>
-          <div>
+          <div id="normalizePlantImg">
             <Image
               src="/NormalizeItUtah@2x.png"
               width={663}
               height={893}
-              sizes="100vw"
+              sizes="50vw"
               alt="Image a plant growing from two pots that is in the shape of the state of Utah with hashtag: #NormalizeIt"
             />
           </div>

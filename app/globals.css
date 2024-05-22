@@ -21,16 +21,21 @@ body {
 section {
   margin-bottom: 60px;
 }
+section:last-child {
+  margin-bottom: 0;
+}
 /* Copy Styling */
 h2 {
   font-size: 2rem;
   font-weight: 600;
-  line-height: 4rem;
+  line-height: 2.5rem;
+  margin-bottom: 20px;
 }
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 3rem;
+  line-height: 2.5rem;
+  margin-bottom: 15px;
 }
 h4 {
   font-size: 1.4rem;
@@ -50,8 +55,57 @@ p {
   color: #35711f;
   line-height: 2rem;
 }
+.footerGreenCopy {
+  color: #103c00;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.footerWhiteCopy > p {
+  color: #f2f2f2;
+  font-weight: 400;
+}
+#normalizePlantImg {
+  float: none;
+  overflow: hidden;
+  margin-right: 0px;
+  margin-bottom: -80px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+@media (min-width: 475px) {
+  #normalizePlantImg {
+    margin-bottom: -100px;
+  }
+}
+@media (min-width: 560px) {
+  #normalizePlantImg {
+    margin-bottom: -120px;
+  }
+}
+@media (min-width: 640px) {
+  #normalizePlantImg {
+    margin-bottom: -140px;
+  }
+}
+@media (min-width: 768px) {
+  #normalizePlantImg {
+    margin-bottom: -160px;
+  }
+}
+@media (min-width: 1024px) {
+  #normalizePlantImg {
+    margin-bottom: -120px;
+  }
+}
+@media (min-width: 1280px) {
+  #normalizePlantImg {
+    float: right;
+    overflow: visible;
+    margin-right: -120px;
+    margin-bottom: -120px;
   }
 }
