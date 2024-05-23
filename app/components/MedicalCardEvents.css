@@ -1,0 +1,19 @@
+.eventCard {
+  border: 1px solid #103c00;
+  background-color: #f2f2f2;
+  max-width: 1024px;
+  border-radius: 16px;
+}
+.eventCard h2 {
+    font-size: 1.4rem;
+    font-weight:900;
+    margin-bottom: 5px;
+    line-height: 1.5rem;
+}
+.eventCard h3 {
+  font-size: 1.2rem;
+  color: #35711f;
+  font-weight: 500;
+  margin-bottom: 0px;
+  line-height: 1.5rem;
+}

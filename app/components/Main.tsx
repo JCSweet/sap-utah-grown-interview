@@ -2,6 +2,7 @@ import React from "react";
 import reviewBG from "../../public/Updated Assets/Review-Banner@2x.png";
 import Image from "next/image";
 import Link from "next/link";
+import MedicalCardEvents from "./MedicalCardEvents";
 
 const Main = () => {
   return (
@@ -13,9 +14,9 @@ const Main = () => {
         </section>
         {/* -Tagline  */}
         {/* Event Cards  */}
-        <section>
-          <h2>Upcoming Utah Medical Card Events</h2>
-          <div>** event card components **</div>
+        <section className="w-full">
+          <h2 className="text-center">Upcoming Utah Medical Card Events</h2>
+            <MedicalCardEvents />
         </section>
         {/* -Event Cards  */}
         {/* Things to know  */}

@@ -13,7 +13,12 @@
     /* --background-hex: #ffffff; */
   }
 }
-
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+/* Layout */
 body {
   color: var(--foreground-hex);
   background: var(--background-hex);
@@ -24,6 +29,7 @@ section {
 section:last-child {
   margin-bottom: 0;
 }
+/* -Layout */
 /* Copy Styling */
 h2 {
   font-size: 2rem;
@@ -64,17 +70,21 @@ p {
   color: #f2f2f2;
   font-weight: 400;
 }
+/* -Copy Styling */
+/* Button Styling */
+button {
+  border-radius: 32px;
+  padding: 16px 32px;
+  background-color: #e7cbaf;
+  color: #103c00;
+}
+/* -Button Styling */
+/* NormalizeIt Logo Overflow Styling */
 #normalizePlantImg {
   float: none;
   overflow: hidden;
   margin-right: 0px;
   margin-bottom: -80px;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }
 @media (min-width: 475px) {
   #normalizePlantImg {
@@ -109,3 +119,4 @@ p {
     margin-bottom: -120px;
   }
 }
+/* -NormalizeIt Logo Overflow Styling */
